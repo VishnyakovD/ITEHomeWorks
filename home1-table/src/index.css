@@ -1,4 +1,4 @@
-*{
+* {
   box-sizing: border-box;
 }
 body {
@@ -7,40 +7,40 @@ body {
   font-family: sans-serif;
 }
 
-.table{
+.table {
   width: 100%;
 }
 
-.row{
+.row {
   display: flex;
-  border-bottom:1px solid #ff784c;
+  border-bottom: 1px solid #ff784c;
   width: inherit;
   font-weight: 300;
 }
 
-.cell{
-  padding: 5px 10px; 
-  height: 50px; 
-  overflow: hide; 
+.cell {
+  padding: 5px 10px;
+  height: 50px;
+  overflow: hide;
 }
 
-.cell.cell-text{
+.cell.cell-text {
   text-align: left;
 }
 
-.cell.cell-number{
+.cell.cell-number {
   text-align: right;
 }
 
-.cell.cell-date{
+.cell.cell-date {
   font-style: italic;
   text-align: left;
 }
 
-.cell.cell-money{
+.cell.cell-money {
   text-align: right;
 }
 
-.row.row-head{
+.row.row-head {
   font-weight: bold;
 }

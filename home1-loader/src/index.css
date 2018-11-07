@@ -4,15 +4,15 @@ body {
   font-family: sans-serif;
 }
 
-.hide{
+.hide {
   display: none;
 }
 
-.img-container{
+.img-container {
   height: 350px;
   text-align: center;
 }
 
-.img-container .img-load{
+.img-container .img-load {
   height: 50px;
 }
