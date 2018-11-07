@@ -1,0 +1,17 @@
+.toggler, .input-block{
+  font-size: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.toggler .toggler-item{
+  display: inline-block;
+  background: burlywood;
+  padding: 5px;
+}
+
+.toggler .toggler-item.active{
+  border:1px solid rgb(247, 140, 1);
+  background: rgb(253, 249, 10);
+}

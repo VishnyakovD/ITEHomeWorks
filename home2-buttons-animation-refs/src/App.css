@@ -1,0 +1,70 @@
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+
+@keyframes opacity {
+	0% {
+		opacity:1
+	}
+	100% {
+    opacity:0
+	}
+}
+
+@keyframes move {
+  from {
+    margin-left: 100%;
+  }
+
+  to {
+    margin-left: 0%;
+  }
+}
+
+.move {
+  animation: move 3s;
+  position: absolute;
+  width:max-content;
+}
+
+.gradient{
+  color:goldenrod;
+  background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+	animation: Gradient 15s ease infinite;
+}
+
+.opacity{
+	animation: opacity 3s ease infinite;
+}
+
+button{
+  background: none;
+	color: inherit;
+	border: none;
+	cursor: pointer;
+  outline: inherit;
+  margin: 5px;
+  padding: 5px;
+  border: 1px solid goldenrod;
+  border-radius: 10px;
+}
+
+
+
+
+
+
+
+
