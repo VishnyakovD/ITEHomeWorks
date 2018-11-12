@@ -1,0 +1,57 @@
+body{
+  padding: 10px;
+}
+
+.add-todo-block{
+  display: flex;
+}
+
+.add-todo-block input{
+  display: inline-block;
+  width: 100%;
+  height: 34px;
+  font-size: 20px;
+}
+
+.add-todo-block button{
+  display: inline-block;
+  width: 100px;
+  height: 40px;
+}
+
+.main-menu {
+    margin: 10px 5px;
+  text-align: center;
+}
+
+.main-menu a {
+  font-size: 20px;
+  padding: 5px 10px;
+  text-decoration: none;
+} 
+
+ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li{
+  cursor: pointer;
+  padding: 5px 10px;
+}
+
+.done-true{
+  color:green;
+  font-weight: 500;
+  background: yellowgreen;
+}
+
+.done-false{
+  color:black;
+  background: ghostwhite;
+}
+
+h2{
+  margin: 5px;
+}
