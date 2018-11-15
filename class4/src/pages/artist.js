@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import { Link, Redirect } from "react-router-dom";
 import loaderImgSrc from "../loader.svg";
 
+import Helmet from "react-helmet";
+
 class Artist extends Component {
   state = {
     item: {},
@@ -42,19 +44,28 @@ class Artist extends Component {
     } else if (item === undefined) {
       return <Redirect to="/notfound" />;
     } else {
-      console.log(item);
       if (item.album.length === 0) {
         return (
           <div>
-            <h2>Artist {item.name}</h2>
+            <Helmet>
+              <title>Artist {item.name}</title>
+              <meta name="keywords" content="HTML,CSS,XML,JavaScript" />
+            </Helmet>
+
+            <h2>Artist - {item.name}</h2>
             <div>Not Albums</div>
           </div>
         );
       } else {
         return (
           <div>
+            <Helmet>
+              <title>Artist - {item.name}</title>
+              <meta name="keywords" content="HTML,CSS,XML,JavaScript" />
+            </Helmet>
             <h2>Artist {item.name}</h2>
             <table>
+              <tbody>
               <tr>
                 <th />
                 <th>Album</th>
@@ -62,7 +73,7 @@ class Artist extends Component {
                 <th>Total time</th>
               </tr>
               {item.album.map((album, key) => (
-                <tr>
+                <tr key={key}>
                   <td>{key + 1}</td>
                   <td>
                     <Link
@@ -78,6 +89,7 @@ class Artist extends Component {
                   </td>
                 </tr>
               ))}
+              </tbody>
             </table>
           </div>
         );
@@ -87,3 +99,4 @@ class Artist extends Component {
 }
 
 export default Artist;
+
